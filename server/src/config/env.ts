@@ -9,7 +9,10 @@ const envSchema = z.object({
   MONGO_URI: z.string().min(1, "MONGO_URI is required"),
   JWT_SECRET: z.string().min(16, "JWT_SECRET must be at least 16 characters"),
   JWT_EXPIRES_IN: z.string().min(1, "JWT_EXPIRES_IN is required"),
-  CLIENT_URL: z.string().url("CLIENT_URL must be a valid URL"),
+  CLIENT_URL: z
+    .string()
+    .url("CLIENT_URL must be a valid URL")
+    .transform((val) => (val.endsWith("/") ? val.slice(0, -1) : val)),
   STRIPE_SECRET_KEY: z.string().min(1, "STRIPE_SECRET_KEY is required"),
   STRIPE_WEBHOOK_SECRET: z.string().min(1, "STRIPE_WEBHOOK_SECRET is required"),
   CURRENCY: z.string().default("INR")
