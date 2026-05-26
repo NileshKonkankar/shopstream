@@ -64,9 +64,7 @@ export const Navbar = () => {
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
       <nav className="container-page flex h-16 items-center justify-between">
         <Link className="flex items-center gap-2 text-lg font-bold text-slate-950" to="/">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-brand-600 text-white">
-            <ShoppingBag className="h-5 w-5" aria-hidden="true" />
-          </span>
+          <img src="/logo.png" alt="ShopStream Logo" className="h-9 w-9 rounded-md object-contain" />
           ShopStream
         </Link>
 
