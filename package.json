@@ -1,0 +1,27 @@
+{
+  "name": "shopstream-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ShopStream - E-Commerce Monorepo with React frontend and Node/Express backend.",
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "lint:client": "npm run lint --prefix client",
+    "lint:server": "npm run lint --prefix server",
+    "test:client": "npm run test --prefix client",
+    "test:server": "npm run test --prefix server"
+  },
+  "keywords": [
+    "monorepo",
+    "react",
+    "express",
+    "typescript",
+    "socket.io",
+    "stripe"
+  ],
+  "author": "",
+  "license": "MIT"
+}

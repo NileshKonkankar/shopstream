@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: shopstream-api
+    env: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+        placeholder: "mongodb+srv://<user>:<password>@cluster.mongodb.net/shopstream"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CLIENT_URL
+        sync: false
+        placeholder: "https://your-shopstream-client.vercel.app"
+      - key: STRIPE_SECRET_KEY
+        sync: false
+        placeholder: "sk_test_..."
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+        placeholder: "whsec_..."
+      - key: CURRENCY
+        value: INR
