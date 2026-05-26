@@ -73,7 +73,7 @@ jobs:
   deploy-backend:
     name: Deploy Backend to Render
     needs: backend
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Render Deploy Hook
@@ -89,7 +89,7 @@ jobs:
   deploy-frontend:
     name: Deploy Frontend to Vercel
     needs: frontend
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
