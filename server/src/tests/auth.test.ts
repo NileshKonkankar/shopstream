@@ -155,4 +155,28 @@ describe("Auth Controller & Routes", () => {
       expect(response.body.user.id).toBe("user123");
     });
   });
+
+  describe("Method Not Allowed on auth endpoints", () => {
+    it("should return 405 Method Not Allowed with Allow header on GET /api/auth/login", async () => {
+      const response = await request(app).get("/api/auth/login");
+      expect(response.status).toBe(405);
+      expect(response.headers.allow).toContain("POST");
+      expect(response.body.code).toBe("METHOD_NOT_ALLOWED");
+      expect(response.body.message).toContain("Method GET not allowed on /api/auth/login");
+    });
+
+    it("should return 405 Method Not Allowed with Allow header on GET /api/auth/register", async () => {
+      const response = await request(app).get("/api/auth/register");
+      expect(response.status).toBe(405);
+      expect(response.headers.allow).toContain("POST");
+      expect(response.body.code).toBe("METHOD_NOT_ALLOWED");
+    });
+
+    it("should return 405 Method Not Allowed with Allow header on POST /api/auth/me", async () => {
+      const response = await request(app).post("/api/auth/me");
+      expect(response.status).toBe(405);
+      expect(response.headers.allow).toContain("GET");
+      expect(response.body.code).toBe("METHOD_NOT_ALLOWED");
+    });
+  });
 });

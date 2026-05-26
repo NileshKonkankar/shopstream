@@ -15,6 +15,10 @@ export const getErrorCode = (statusCode: number): string => {
     return "NOT_FOUND";
   }
 
+  if (statusCode === 405) {
+    return "METHOD_NOT_ALLOWED";
+  }
+
   if (statusCode === 409) {
     return "CONFLICT";
   }
