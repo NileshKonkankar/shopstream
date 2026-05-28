@@ -1,6 +1,6 @@
 # ShopStream 🛍️
 
-[![ShopStream CI/CD](https://github.com/yourusername/shopstream/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/shopstream/actions)
+[![ShopStream CI/CD](https://github.com/NileshKonkankar/shopstream/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/NileshKonkankar/shopstream/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node version](https://img.shields.io/badge/node->=20.0.0-blue.svg)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
