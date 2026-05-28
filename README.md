@@ -270,6 +270,3 @@ Recommended cloud deployment platforms:
 > *“Architected and built a highly responsive MERN stack e-commerce application featuring real-time inventory synchronization via Socket.IO and a secure zero-trust checkout using Stripe Payment Intents API. Achieved high maintainability with structured TypeScript typing, created isolated tests via Jest/Vitest with >70% coverage, and constructed automated deployment workflows using multi-stage Dockerfiles and GitHub Actions.”*
 
 ---
-
-## 📝 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
