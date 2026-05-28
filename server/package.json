@@ -8,6 +8,7 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "lint": "tsc --noEmit",
+    "seed": "npx ts-node src/scripts/seed.ts",
     "test": "jest --runInBand",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage --runInBand"
