@@ -95,7 +95,7 @@ const productsData = [
     category: "Home & Kitchen",
     description: "Brew the perfect cup of coffee with precision temperature control and customizable brewing strength. Connects to your smartphone via Bluetooth to schedule brewing schedules or customize drip parameters. Crafted in sleek stainless steel and includes a premium thermal carafe to keep coffee hot for hours.",
     stock: 12,
-    images: ["https://images.unsplash.com/photo-1517256064527-09c53b2d0bc6?w=800&auto=format&fit=crop&q=80"],
+    images: ["https://images.unsplash.com/photo-1518057111178-44a106bad636?w=800&auto=format&fit=crop&q=80"],
     isActive: true
   },
   {
