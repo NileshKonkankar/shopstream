@@ -17,7 +17,44 @@ ShopStream is a production-grade, highly responsive full-stack e-commerce platfo
 * **Secure Checkout with Stripe**: Client-side Stripe Elements integrated with a backend Stripe Payment Intents flow, executing secure server-side cost recalculations in Indian Rupees (₹) to prevent client-side price tampering.
 * **Interactive Shopping Cart**: Robust cart management with real-time stock-out warnings, quantity validation, and smooth animations.
 * **Admin Dashboard**: Dedicated portal for admins to manage active catalogs, track products, and audit stock levels.
-* **Recruiter-Friendly Developer Setup**: Comprehensive testing suite (Vitest + Jest), monorepo-ready configurations, optimized Docker Compose settings, and a automated CI/CD pipeline.
+* **Recruiter-Friendly Developer Setup**: Comprehensive testing suite (Vitest + Jest), monorepo-ready configurations, optimized Docker Compose settings, and an automated CI/CD pipeline.
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Landing Page
+![Landing Page](screenshots/landing.png)
+
+### 🛍️ Products Catalog
+![Products Catalog](screenshots/products.png)
+
+### 🛒 Shopping Cart
+![Shopping Cart](screenshots/cart.png)
+
+### 🔐 Authentication Flow
+<table>
+  <tr>
+    <td align="center"><b>Login Page</b></td>
+    <td align="center"><b>Register Page</b></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/login.png" alt="Login Page" /></td>
+    <td width="50%"><img src="screenshots/register.png" alt="Register Page" /></td>
+  </tr>
+</table>
+
+### 👑 Admin Management
+<table>
+  <tr>
+    <td align="center"><b>Admin Dashboard</b></td>
+    <td align="center"><b>Inventory Management</b></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/admin_dashboard.png" alt="Admin Dashboard" /></td>
+    <td width="50%"><img src="screenshots/admin_products.png" alt="Inventory Management" /></td>
+  </tr>
+</table>
 
 ---
 
